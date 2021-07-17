@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -21,24 +16,27 @@ local UICorner_6 = Instance.new("UICorner")
 local DahoodLabel1 = Instance.new("TextLabel")
 local Swagmode = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
-local NetworkBars = Instance.new("Folder")
-local LowBar = Instance.new("Frame")
+local Error1 = Instance.new("Frame")
 local UICorner_8 = Instance.new("UICorner")
-local NormalBar = Instance.new("Frame")
+local ErrorImage = Instance.new("ImageLabel")
+local DecorationFrame2 = Instance.new("Frame")
 local UICorner_9 = Instance.new("UICorner")
-local HighBar = Instance.new("Frame")
+local ErrorLabel = Instance.new("TextLabel")
+local ErrorMessage = Instance.new("TextLabel")
+local LowBar = Instance.new("Frame")
 local UICorner_10 = Instance.new("UICorner")
-local Sounds = Instance.new("Folder")
-local DecoyButtons = Instance.new("Folder")
-local VolumeUp = Instance.new("Frame")
+local NormalBar = Instance.new("Frame")
 local UICorner_11 = Instance.new("UICorner")
-local Mute = Instance.new("Frame")
+local HighBar = Instance.new("Frame")
 local UICorner_12 = Instance.new("UICorner")
-local VolumeDown = Instance.new("Frame")
-local UICorner_13 = Instance.new("UICorner")
 local Power = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
+local VolumeDown = Instance.new("Frame")
 local UICorner_14 = Instance.new("UICorner")
-local Scripts = Instance.new("Folder")
+local VolumeUp = Instance.new("Frame")
+local UICorner_15 = Instance.new("UICorner")
+local Mute = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
 
 --Properties:
 
@@ -51,8 +49,8 @@ Main.AnchorPoint = Vector2.new(0.5, 0.5)
 Main.BackgroundColor3 = Color3.fromRGB(26, 26, 36)
 Main.Position = UDim2.new(0.498539448, 0, 0.499165297, 0)
 Main.Size = UDim2.new(0, 230, 0, 400)
-Main.Active = true
 Main.Draggable = true
+Main.Active = true
 
 UICorner.CornerRadius = UDim.new(0, 25)
 UICorner.Parent = Main
@@ -187,11 +185,68 @@ Swagmode.TextWrapped = true
 UICorner_7.CornerRadius = UDim.new(0, 25)
 UICorner_7.Parent = Swagmode
 
-NetworkBars.Name = "NetworkBars"
-NetworkBars.Parent = Main
+Error1.Name = "Error1"
+Error1.Parent = Background
+Error1.AnchorPoint = Vector2.new(0.5, 0.5)
+Error1.BackgroundColor3 = Color3.fromRGB(47, 56, 93)
+Error1.BackgroundTransparency = 1.000
+Error1.Position = UDim2.new(0.5, 0, 1.00100005, 0)
+Error1.Size = UDim2.new(0, 200, 0, 0)
+
+UICorner_8.CornerRadius = UDim.new(0, 25)
+UICorner_8.Parent = Error1
+
+ErrorImage.Name = "ErrorImage "
+ErrorImage.Parent = Error1
+ErrorImage.AnchorPoint = Vector2.new(0.5, 0.5)
+ErrorImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ErrorImage.BackgroundTransparency = 1.000
+ErrorImage.Position = UDim2.new(0.504999995, 0, 0.274456531, 0)
+ErrorImage.Size = UDim2.new(0, 200, 0, 180)
+ErrorImage.Image = "rbxassetid://7112207849"
+ErrorImage.ImageTransparency = 1.000
+ErrorImage.ScaleType = Enum.ScaleType.Fit
+
+DecorationFrame2.Name = "DecorationFrame2"
+DecorationFrame2.Parent = Error1
+DecorationFrame2.BackgroundColor3 = Color3.fromRGB(26, 26, 36)
+DecorationFrame2.BackgroundTransparency = 1.000
+DecorationFrame2.Position = UDim2.new(0.0499999933, 0, 0.535326123, 0)
+DecorationFrame2.Size = UDim2.new(0, 180, 0, 5)
+
+UICorner_9.CornerRadius = UDim.new(0, 25)
+UICorner_9.Parent = DecorationFrame2
+
+ErrorLabel.Name = "ErrorLabel"
+ErrorLabel.Parent = Error1
+ErrorLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ErrorLabel.BackgroundTransparency = 1.000
+ErrorLabel.Position = UDim2.new(0.00499999989, 0, 0.548913062, 0)
+ErrorLabel.Size = UDim2.new(0, 200, 0, 50)
+ErrorLabel.Font = Enum.Font.Kalam
+ErrorLabel.Text = "Error."
+ErrorLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+ErrorLabel.TextScaled = true
+ErrorLabel.TextSize = 14.000
+ErrorLabel.TextTransparency = 1.000
+ErrorLabel.TextWrapped = true
+
+ErrorMessage.Name = "ErrorMessage"
+ErrorMessage.Parent = Error1
+ErrorMessage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ErrorMessage.BackgroundTransparency = 1.000
+ErrorMessage.Position = UDim2.new(0.00499999989, 0, 0.652173996, 0)
+ErrorMessage.Size = UDim2.new(0, 200, 0, 60)
+ErrorMessage.Font = Enum.Font.Kalam
+ErrorMessage.Text = "The game you are currently using this script hub on is currently not supported"
+ErrorMessage.TextColor3 = Color3.fromRGB(0, 0, 0)
+ErrorMessage.TextScaled = true
+ErrorMessage.TextSize = 35.000
+ErrorMessage.TextTransparency = 1.000
+ErrorMessage.TextWrapped = true
 
 LowBar.Name = "LowBar"
-LowBar.Parent = NetworkBars
+LowBar.Parent = Main
 LowBar.AnchorPoint = Vector2.new(0.5, 0.5)
 LowBar.BackgroundColor3 = Color3.fromRGB(26, 26, 36)
 LowBar.BackgroundTransparency = 1.000
@@ -199,11 +254,11 @@ LowBar.BorderColor3 = Color3.fromRGB(27, 42, 53)
 LowBar.Position = UDim2.new(0.882000029, 0, 0.0540000014, 0)
 LowBar.Size = UDim2.new(0, 3, 0, 6)
 
-UICorner_8.CornerRadius = UDim.new(0, 25)
-UICorner_8.Parent = LowBar
+UICorner_10.CornerRadius = UDim.new(0, 25)
+UICorner_10.Parent = LowBar
 
 NormalBar.Name = "NormalBar"
-NormalBar.Parent = NetworkBars
+NormalBar.Parent = Main
 NormalBar.AnchorPoint = Vector2.new(0.5, 0.5)
 NormalBar.BackgroundColor3 = Color3.fromRGB(26, 26, 36)
 NormalBar.BackgroundTransparency = 1.000
@@ -211,11 +266,11 @@ NormalBar.BorderColor3 = Color3.fromRGB(27, 42, 53)
 NormalBar.Position = UDim2.new(0.901967704, 0, 0.0493501648, 0)
 NormalBar.Size = UDim2.new(0, 3, 0, 10)
 
-UICorner_9.CornerRadius = UDim.new(0, 25)
-UICorner_9.Parent = NormalBar
+UICorner_11.CornerRadius = UDim.new(0, 25)
+UICorner_11.Parent = NormalBar
 
 HighBar.Name = "HighBar"
-HighBar.Parent = NetworkBars
+HighBar.Parent = Main
 HighBar.AnchorPoint = Vector2.new(0.5, 0.5)
 HighBar.BackgroundColor3 = Color3.fromRGB(26, 26, 36)
 HighBar.BackgroundTransparency = 1.000
@@ -223,65 +278,56 @@ HighBar.BorderColor3 = Color3.fromRGB(27, 42, 53)
 HighBar.Position = UDim2.new(0.915934443, 0, 0.0462149829, 0)
 HighBar.Size = UDim2.new(0, 3, 0, 13)
 
-UICorner_10.CornerRadius = UDim.new(0, 25)
-UICorner_10.Parent = HighBar
-
-Sounds.Name = "Sounds"
-Sounds.Parent = Main
-
-DecoyButtons.Name = "DecoyButtons"
-DecoyButtons.Parent = Main
-
-VolumeUp.Name = "VolumeUp"
-VolumeUp.Parent = DecoyButtons
-VolumeUp.AnchorPoint = Vector2.new(0.5, 0.5)
-VolumeUp.BackgroundColor3 = Color3.fromRGB(26, 26, 36)
-VolumeUp.BorderColor3 = Color3.fromRGB(27, 42, 53)
-VolumeUp.Position = UDim2.new(0.00300000003, 0, 0.179000005, 0)
-VolumeUp.Size = UDim2.new(0, 5, 0, 30)
-
-UICorner_11.CornerRadius = UDim.new(0, 25)
-UICorner_11.Parent = VolumeUp
-
-Mute.Name = "Mute"
-Mute.Parent = DecoyButtons
-Mute.AnchorPoint = Vector2.new(0.5, 0.5)
-Mute.BackgroundColor3 = Color3.fromRGB(26, 26, 36)
-Mute.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Mute.Position = UDim2.new(0.00300000003, 0, 0.115000002, 0)
-Mute.Size = UDim2.new(0, 5, 0, 15)
-
 UICorner_12.CornerRadius = UDim.new(0, 25)
-UICorner_12.Parent = Mute
-
-VolumeDown.Name = "VolumeDown"
-VolumeDown.Parent = DecoyButtons
-VolumeDown.AnchorPoint = Vector2.new(0.5, 0.5)
-VolumeDown.BackgroundColor3 = Color3.fromRGB(26, 26, 36)
-VolumeDown.BorderColor3 = Color3.fromRGB(27, 42, 53)
-VolumeDown.Position = UDim2.new(0.00300000003, 0, 0.256999999, 0)
-VolumeDown.Size = UDim2.new(0, 5, 0, 30)
-
-UICorner_13.CornerRadius = UDim.new(0, 25)
-UICorner_13.Parent = VolumeDown
+UICorner_12.Parent = HighBar
 
 Power.Name = "Power"
-Power.Parent = DecoyButtons
+Power.Parent = Main
 Power.AnchorPoint = Vector2.new(0.5, 0.5)
 Power.BackgroundColor3 = Color3.fromRGB(26, 26, 36)
 Power.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Power.Position = UDim2.new(0.999000013, 0, 0.164000005, 0)
 Power.Size = UDim2.new(0, 5, 0, 40)
 
-UICorner_14.CornerRadius = UDim.new(0, 25)
-UICorner_14.Parent = Power
+UICorner_13.CornerRadius = UDim.new(0, 25)
+UICorner_13.Parent = Power
 
-Scripts.Name = "Scripts"
-Scripts.Parent = Main
+VolumeDown.Name = "VolumeDown"
+VolumeDown.Parent = Main
+VolumeDown.AnchorPoint = Vector2.new(0.5, 0.5)
+VolumeDown.BackgroundColor3 = Color3.fromRGB(26, 26, 36)
+VolumeDown.BorderColor3 = Color3.fromRGB(27, 42, 53)
+VolumeDown.Position = UDim2.new(0.00300000003, 0, 0.256999999, 0)
+VolumeDown.Size = UDim2.new(0, 5, 0, 30)
+
+UICorner_14.CornerRadius = UDim.new(0, 25)
+UICorner_14.Parent = VolumeDown
+
+VolumeUp.Name = "VolumeUp"
+VolumeUp.Parent = Main
+VolumeUp.AnchorPoint = Vector2.new(0.5, 0.5)
+VolumeUp.BackgroundColor3 = Color3.fromRGB(26, 26, 36)
+VolumeUp.BorderColor3 = Color3.fromRGB(27, 42, 53)
+VolumeUp.Position = UDim2.new(0.00300000003, 0, 0.179000005, 0)
+VolumeUp.Size = UDim2.new(0, 5, 0, 30)
+
+UICorner_15.CornerRadius = UDim.new(0, 25)
+UICorner_15.Parent = VolumeUp
+
+Mute.Name = "Mute"
+Mute.Parent = Main
+Mute.AnchorPoint = Vector2.new(0.5, 0.5)
+Mute.BackgroundColor3 = Color3.fromRGB(26, 26, 36)
+Mute.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Mute.Position = UDim2.new(0.00300000003, 0, 0.115000002, 0)
+Mute.Size = UDim2.new(0, 5, 0, 15)
+
+UICorner_16.CornerRadius = UDim.new(0, 25)
+UICorner_16.Parent = Mute
 
 -- Scripts:
 
-local function GDVBI_fake_script() -- InfiniteYield1.InfYieldLS1 
+local function QHYF_fake_script() -- InfiniteYield1.InfYieldLS1 
 	local script = Instance.new('LocalScript', InfiniteYield1)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -290,8 +336,8 @@ local function GDVBI_fake_script() -- InfiniteYield1.InfYieldLS1
 	
 	
 end
-coroutine.wrap(GDVBI_fake_script)()
-local function FPJBF_fake_script() -- GrenadeNuke.GrenadeNukeLS 
+coroutine.wrap(QHYF_fake_script)()
+local function SRMGPAG_fake_script() -- GrenadeNuke.GrenadeNukeLS 
 	local script = Instance.new('LocalScript', GrenadeNuke)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -300,8 +346,8 @@ local function FPJBF_fake_script() -- GrenadeNuke.GrenadeNukeLS
 	
 	
 end
-coroutine.wrap(FPJBF_fake_script)()
-local function VCQF_fake_script() -- Swagmode.SwagmodeLS 
+coroutine.wrap(SRMGPAG_fake_script)()
+local function FATNA_fake_script() -- Swagmode.SwagmodeLS 
 	local script = Instance.new('LocalScript', Swagmode)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -310,34 +356,30 @@ local function VCQF_fake_script() -- Swagmode.SwagmodeLS
 	
 	
 end
-coroutine.wrap(VCQF_fake_script)()
-local function CALWGIW_fake_script() -- Scripts.BootChimePlay 
-	local script = Instance.new('LocalScript', Scripts)
-
-	local Boot = script.parent.Parent.Sounds.BootChime
-	------------------------------------------------------
-	wait(3.2)
-		Boot:Play()
-	
-	
-end
-coroutine.wrap(CALWGIW_fake_script)()
-local function SISGXZO_fake_script() -- Scripts.GameDetermination 
-	local script = Instance.new('LocalScript', Scripts)
+coroutine.wrap(FATNA_fake_script)()
+local function VPYEQ_fake_script() -- Main.GameDetermination 
+	local script = Instance.new('LocalScript', Main)
 
 	local Info = TweenInfo.new(1)
 	-------------------------------------------------------------------
 	--Dahood
-	local DahoodUI = script.parent.parent.Background.DahoodUI
-	local DecorationFrame1 = script.parent.parent.Background.DahoodUI.DecorationFrame1
-	local DahoodLogo = script.parent.parent.Background.DahoodUI.DaHoodLogo
-	local ScriptScroll1 = script.Parent.Parent.Background.DahoodUI.ScriptScroll1
-	local GrenadeNuke = script.Parent.Parent.Background.DahoodUI.ScriptScroll1.GrenadeNuke
-	local Swagmode = script.Parent.Parent.Background.DahoodUI.ScriptScroll1.Swagmode
-	local InfiniteYield1 = script.Parent.Parent.Background.DahoodUI.ScriptScroll1.InfiniteYield1
-	local DahoodLabel1 = script.parent.Parent.Background.DahoodUI.ScriptScroll1.DahoodLabel1
+	local DahoodUI = script.parent.Background.DahoodUI
+	local DecorationFrame1 = script.parent.Background.DahoodUI.DecorationFrame1
+	local DahoodLogo = script.parent.Background.DahoodUI.DaHoodLogo
+	local ScriptScroll1 = script.Parent.Background.DahoodUI.ScriptScroll1
+	local GrenadeNuke = script.Parent.Background.DahoodUI.ScriptScroll1.GrenadeNuke
+	local Swagmode = script.Parent.Background.DahoodUI.ScriptScroll1.Swagmode
+	local InfiniteYield1 = script.Parent.Background.DahoodUI.ScriptScroll1.InfiniteYield1
+	local DahoodLabel1 = script.Parent.Background.DahoodUI.ScriptScroll1.DahoodLabel1
 	-------------------------------------------------------------------
-	
+	--ErrorScreen
+	local Error1 = script.parent.Background.Error1
+	local DecorationFrame2 = script.parent.Background.Error1.DecorationFrame2
+	local ErrorImage = script.parent.Background.Error1.ErrorImage
+	local ErrorLabel = script.parent.Background.Error1.ErrorLabel
+	local ErrorMessage = script.parent.Background.Error1.ErrorMessage
+	-------------------------------------------------------------------
+	--Dahood
 	wait(5.40)	
 	if game.PlaceId ==2788229376 then
 	DahoodUI:TweenSize(UDim2.new(0,200,0,368))
@@ -367,27 +409,39 @@ local function SISGXZO_fake_script() -- Scripts.GameDetermination
 	Tween12:Play()
 	Tween13:Play()
 	Tween14:Play()
-	Tween15:Play()
-	
-	
-	
-	
-	
+	Tween14:Play()
+	-------------------------------------------------------------------------
 	
 	else
+	Error1:TweenSize(UDim2.new(0,200,0,368))
+	Error1:TweenPosition(UDim2.new(0.5,0,0.53,0))
+	local Tween16 = game:GetService("TweenService"):Create(Error1,Info,{BackgroundTransparency=.2})
+	local Tween17 = game:GetService("TweenService"):Create(DecorationFrame2,Info,{BackgroundTransparency=0})
+	local Tween18 = game:GetService("TweenService"):Create(ErrorImage,Info,{ImageTransparency=0})
+	local Tween19 = game:GetService("TweenService"):Create(ErrorLabel,Info,{TextTransparency=0})
+	local Tween20 = game:GetService("TweenService"):Create(ErrorMessage,Info,{TextTransparency=0})
+	wait(1.5)
+	Tween16:Play()
+	Tween17:Play()
+	Tween18:Play()
+	wait(.3)
+	Tween19:Play()
+	Tween20:Play()
+		
+	
 	end
 	
 	
 end
-coroutine.wrap(SISGXZO_fake_script)()
-local function ETUZLJ_fake_script() -- Scripts.Opening 
-	local script = Instance.new('LocalScript', Scripts)
+coroutine.wrap(VPYEQ_fake_script)()
+local function JAHO_fake_script() -- Main.BootScreen 
+	local script = Instance.new('LocalScript', Main)
 
 	local Info = TweenInfo.new(1)
-	local Highbar = script.parent.parent.NetworkBars.HighBar
-	local NormalBar = script.parent.Parent.NetworkBars.NormalBar
-	local LowBar = script.parent.Parent.NetworkBars.LowBar
-	local Background = script.parent.parent.Background
+	local Highbar = script.parent.NetworkBars.HighBar
+	local NormalBar = script.Parent.NetworkBars.NormalBar
+	local LowBar = script.Parent.NetworkBars.LowBar
+	local Background = script.parent.Background
 	--------------------------------------------------------------------------------------------------
 	local Tween1 = game:GetService("TweenService"):Create(Background,Info,{ImageTransparency=0})
 	local Tween2 = game:GetService("TweenService"):Create(LowBar,Info,{BackgroundTransparency=0})
@@ -405,14 +459,25 @@ local function ETUZLJ_fake_script() -- Scripts.Opening
 	wait(.35)
 	Tween4:Play()
 end
-coroutine.wrap(ETUZLJ_fake_script)()
-local function ADYDWJU_fake_script() -- Scripts.DHVisibility 
-	local script = Instance.new('LocalScript', Scripts)
+coroutine.wrap(JAHO_fake_script)()
+local function EYLSA_fake_script() -- Main.BootChimePlay 
+	local script = Instance.new('LocalScript', Main)
 
-	if game.PlaceId ==788229376 then
-		script.parent.parent.Background.DahoodUI.Visible = true
+	local Boot = script.parent.BootChime
+	------------------------------------------------------
+	wait(3.2)
+		Boot:Play()
+	
+	
+end
+coroutine.wrap(EYLSA_fake_script)()
+local function FVDCU_fake_script() -- Main.DHVisibility 
+	local script = Instance.new('LocalScript', Main)
+
+	if game.PlaceId ==2788229376 then
+		script.parent.Background.DahoodUI.Visible = true
 	else
-		script.parent.parent.Background.DahoodUI.Visible = false
+		script.parent.Background.Dahoodui.Visible = false 
 	end
 end
-coroutine.wrap(ADYDWJU_fake_script)()
+coroutine.wrap(FVDCU_fake_script)()

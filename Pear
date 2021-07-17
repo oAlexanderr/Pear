@@ -43,6 +43,7 @@ local Scripts = Instance.new("Folder")
 --Properties:
 
 ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Main.Name = "Main"
 Main.Parent = ScreenGui
@@ -73,7 +74,7 @@ DahoodUI.Name = "DahoodUI"
 DahoodUI.Parent = Background
 DahoodUI.AnchorPoint = Vector2.new(0.5, 0.5)
 DahoodUI.BackgroundColor3 = Color3.fromRGB(47, 56, 93)
-DahoodUI.BackgroundTransparency = 0.200
+DahoodUI.BackgroundTransparency = 1.000
 DahoodUI.Position = UDim2.new(0.5, 0, 1.00089741, 0)
 DahoodUI.Size = UDim2.new(0, 200, 0, 0)
 
@@ -280,7 +281,7 @@ Scripts.Parent = Main
 
 -- Scripts:
 
-local function QMOJZ_fake_script() -- InfiniteYield1.InfYieldLS1 
+local function LHXFIAN_fake_script() -- InfiniteYield1.InfYieldLS1 
 	local script = Instance.new('LocalScript', InfiniteYield1)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -289,8 +290,8 @@ local function QMOJZ_fake_script() -- InfiniteYield1.InfYieldLS1
 	
 	
 end
-coroutine.wrap(QMOJZ_fake_script)()
-local function IZTVRXI_fake_script() -- GrenadeNuke.GrenadeNukeLS 
+coroutine.wrap(LHXFIAN_fake_script)()
+local function EZEUEW_fake_script() -- GrenadeNuke.GrenadeNukeLS 
 	local script = Instance.new('LocalScript', GrenadeNuke)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -299,8 +300,8 @@ local function IZTVRXI_fake_script() -- GrenadeNuke.GrenadeNukeLS
 	
 	
 end
-coroutine.wrap(IZTVRXI_fake_script)()
-local function AWMBWSO_fake_script() -- Swagmode.SwagmodeLS 
+coroutine.wrap(EZEUEW_fake_script)()
+local function BXJE_fake_script() -- Swagmode.SwagmodeLS 
 	local script = Instance.new('LocalScript', Swagmode)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -309,8 +310,8 @@ local function AWMBWSO_fake_script() -- Swagmode.SwagmodeLS
 	
 	
 end
-coroutine.wrap(AWMBWSO_fake_script)()
-local function KKMEY_fake_script() -- Scripts.BootChimePlay 
+coroutine.wrap(BXJE_fake_script)()
+local function KRNSA_fake_script() -- Scripts.BootChimePlay 
 	local script = Instance.new('LocalScript', Scripts)
 
 	local Boot = script.parent.Parent.Sounds.BootChime
@@ -320,8 +321,8 @@ local function KKMEY_fake_script() -- Scripts.BootChimePlay
 	
 	
 end
-coroutine.wrap(KKMEY_fake_script)()
-local function QSWEPN_fake_script() -- Scripts.GameDetermination 
+coroutine.wrap(KRNSA_fake_script)()
+local function WTVMWF_fake_script() -- Scripts.GameDetermination 
 	local script = Instance.new('LocalScript', Scripts)
 
 	local Info = TweenInfo.new(1)
@@ -339,7 +340,6 @@ local function QSWEPN_fake_script() -- Scripts.GameDetermination
 	
 	wait(5.40)	
 	if game.PlaceId ==2788229376 then
-	DahoodUI.visible = true
 	DahoodUI:TweenSize(UDim2.new(0,200,0,368))
 	DahoodUI:TweenPosition(UDim2.new(0.5,0,0.53,0))	
 	local Tween5 = game:GetService("TweenService"):Create(DahoodUI,Info,{BackgroundTransparency=.2})
@@ -367,7 +367,7 @@ local function QSWEPN_fake_script() -- Scripts.GameDetermination
 	Tween12:Play()
 	Tween13:Play()
 	Tween14:Play()
-	Tween14:Play()
+	Tween15:Play()
 	
 	
 	
@@ -375,13 +375,12 @@ local function QSWEPN_fake_script() -- Scripts.GameDetermination
 	
 	
 	else
-	print "hello"
 	end
 	
 	
 end
-coroutine.wrap(QSWEPN_fake_script)()
-local function HJQFSXM_fake_script() -- Scripts.Opening 
+coroutine.wrap(WTVMWF_fake_script)()
+local function BTFFUJ_fake_script() -- Scripts.Opening 
 	local script = Instance.new('LocalScript', Scripts)
 
 	local Info = TweenInfo.new(1)
@@ -406,4 +405,14 @@ local function HJQFSXM_fake_script() -- Scripts.Opening
 	wait(.35)
 	Tween4:Play()
 end
-coroutine.wrap(HJQFSXM_fake_script)()
+coroutine.wrap(BTFFUJ_fake_script)()
+local function MESU_fake_script() -- Scripts.DHVisibility 
+	local script = Instance.new('LocalScript', Scripts)
+
+	if game.PlaceId ==788229376 then
+		script.parent.parent.Background.DahoodUI.Visible = true
+	else
+		script.parent.parent.Background.DahoodUI.Visible = false
+	end
+end
+coroutine.wrap(MESU_fake_script)()

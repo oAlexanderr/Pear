@@ -21,7 +21,6 @@ local UICorner_6 = Instance.new("UICorner")
 local DahoodLabel1 = Instance.new("TextLabel")
 local Swagmode = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
-local Error1 = Instance.new("Frame")
 local NetworkBars = Instance.new("Folder")
 local LowBar = Instance.new("Frame")
 local UICorner_8 = Instance.new("UICorner")
@@ -52,8 +51,8 @@ Main.AnchorPoint = Vector2.new(0.5, 0.5)
 Main.BackgroundColor3 = Color3.fromRGB(26, 26, 36)
 Main.Position = UDim2.new(0.498539448, 0, 0.499165297, 0)
 Main.Size = UDim2.new(0, 230, 0, 400)
-Main.Draggable = true
 Main.Active = true
+Main.Draggable = true
 
 UICorner.CornerRadius = UDim.new(0, 25)
 UICorner.Parent = Main
@@ -75,7 +74,7 @@ DahoodUI.Name = "DahoodUI"
 DahoodUI.Parent = Background
 DahoodUI.AnchorPoint = Vector2.new(0.5, 0.5)
 DahoodUI.BackgroundColor3 = Color3.fromRGB(47, 56, 93)
-DahoodUI.BackgroundTransparency = 0.200
+DahoodUI.BackgroundTransparency = 1.000
 DahoodUI.Position = UDim2.new(0.5, 0, 1.00089741, 0)
 DahoodUI.Size = UDim2.new(0, 200, 0, 0)
 
@@ -188,13 +187,6 @@ Swagmode.TextWrapped = true
 UICorner_7.CornerRadius = UDim.new(0, 25)
 UICorner_7.Parent = Swagmode
 
-Error1.Name = "Error1"
-Error1.Parent = Background
-Error1.AnchorPoint = Vector2.new(0.5, 0.5)
-Error1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Error1.Position = UDim2.new(0.5, 0, 0.5, 0)
-Error1.Size = UDim2.new(0, 100, 0, 100)
-
 NetworkBars.Name = "NetworkBars"
 NetworkBars.Parent = Main
 
@@ -289,7 +281,7 @@ Scripts.Parent = Main
 
 -- Scripts:
 
-local function SJTD_fake_script() -- InfiniteYield1.InfYieldLS1 
+local function GDVBI_fake_script() -- InfiniteYield1.InfYieldLS1 
 	local script = Instance.new('LocalScript', InfiniteYield1)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -298,8 +290,8 @@ local function SJTD_fake_script() -- InfiniteYield1.InfYieldLS1
 	
 	
 end
-coroutine.wrap(SJTD_fake_script)()
-local function ZDDLQG_fake_script() -- GrenadeNuke.GrenadeNukeLS 
+coroutine.wrap(GDVBI_fake_script)()
+local function FPJBF_fake_script() -- GrenadeNuke.GrenadeNukeLS 
 	local script = Instance.new('LocalScript', GrenadeNuke)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -308,8 +300,8 @@ local function ZDDLQG_fake_script() -- GrenadeNuke.GrenadeNukeLS
 	
 	
 end
-coroutine.wrap(ZDDLQG_fake_script)()
-local function GQYKLE_fake_script() -- Swagmode.SwagmodeLS 
+coroutine.wrap(FPJBF_fake_script)()
+local function VCQF_fake_script() -- Swagmode.SwagmodeLS 
 	local script = Instance.new('LocalScript', Swagmode)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -318,8 +310,8 @@ local function GQYKLE_fake_script() -- Swagmode.SwagmodeLS
 	
 	
 end
-coroutine.wrap(GQYKLE_fake_script)()
-local function VABSSFJ_fake_script() -- Scripts.BootChimePlay 
+coroutine.wrap(VCQF_fake_script)()
+local function CALWGIW_fake_script() -- Scripts.BootChimePlay 
 	local script = Instance.new('LocalScript', Scripts)
 
 	local Boot = script.parent.Parent.Sounds.BootChime
@@ -329,8 +321,8 @@ local function VABSSFJ_fake_script() -- Scripts.BootChimePlay
 	
 	
 end
-coroutine.wrap(VABSSFJ_fake_script)()
-local function TPFLDTZ_fake_script() -- Scripts.GameDetermination 
+coroutine.wrap(CALWGIW_fake_script)()
+local function SISGXZO_fake_script() -- Scripts.GameDetermination 
 	local script = Instance.new('LocalScript', Scripts)
 
 	local Info = TweenInfo.new(1)
@@ -348,7 +340,6 @@ local function TPFLDTZ_fake_script() -- Scripts.GameDetermination
 	
 	wait(5.40)	
 	if game.PlaceId ==2788229376 then
-	DahoodUI.visible = true
 	DahoodUI:TweenSize(UDim2.new(0,200,0,368))
 	DahoodUI:TweenPosition(UDim2.new(0.5,0,0.53,0))	
 	local Tween5 = game:GetService("TweenService"):Create(DahoodUI,Info,{BackgroundTransparency=.2})
@@ -376,7 +367,7 @@ local function TPFLDTZ_fake_script() -- Scripts.GameDetermination
 	Tween12:Play()
 	Tween13:Play()
 	Tween14:Play()
-	Tween14:Play()
+	Tween15:Play()
 	
 	
 	
@@ -384,13 +375,12 @@ local function TPFLDTZ_fake_script() -- Scripts.GameDetermination
 	
 	
 	else
-	
 	end
 	
 	
 end
-coroutine.wrap(TPFLDTZ_fake_script)()
-local function PKDB_fake_script() -- Scripts.Opening 
+coroutine.wrap(SISGXZO_fake_script)()
+local function ETUZLJ_fake_script() -- Scripts.Opening 
 	local script = Instance.new('LocalScript', Scripts)
 
 	local Info = TweenInfo.new(1)
@@ -415,4 +405,14 @@ local function PKDB_fake_script() -- Scripts.Opening
 	wait(.35)
 	Tween4:Play()
 end
-coroutine.wrap(PKDB_fake_script)()
+coroutine.wrap(ETUZLJ_fake_script)()
+local function ADYDWJU_fake_script() -- Scripts.DHVisibility 
+	local script = Instance.new('LocalScript', Scripts)
+
+	if game.PlaceId ==788229376 then
+		script.parent.parent.Background.DahoodUI.Visible = true
+	else
+		script.parent.parent.Background.DahoodUI.Visible = false
+	end
+end
+coroutine.wrap(ADYDWJU_fake_script)()

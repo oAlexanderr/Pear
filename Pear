@@ -49,8 +49,8 @@ Main.AnchorPoint = Vector2.new(0.5, 0.5)
 Main.BackgroundColor3 = Color3.fromRGB(26, 26, 36)
 Main.Position = UDim2.new(0.498539448, 0, 0.499165297, 0)
 Main.Size = UDim2.new(0, 230, 0, 400)
-Main.Draggable = true
 Main.Active = true
+Main.Draggable = true
 
 UICorner.CornerRadius = UDim.new(0, 25)
 UICorner.Parent = Main
@@ -327,7 +327,7 @@ UICorner_16.Parent = Mute
 
 -- Scripts:
 
-local function SZRRG_fake_script() -- InfiniteYield1.InfYieldLS1 
+local function DTOWQ_fake_script() -- InfiniteYield1.InfYieldLS1 
 	local script = Instance.new('LocalScript', InfiniteYield1)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -336,8 +336,8 @@ local function SZRRG_fake_script() -- InfiniteYield1.InfYieldLS1
 	
 	
 end
-coroutine.wrap(SZRRG_fake_script)()
-local function WHFSQ_fake_script() -- GrenadeNuke.GrenadeNukeLS 
+coroutine.wrap(DTOWQ_fake_script)()
+local function RFQISM_fake_script() -- GrenadeNuke.GrenadeNukeLS 
 	local script = Instance.new('LocalScript', GrenadeNuke)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -346,8 +346,8 @@ local function WHFSQ_fake_script() -- GrenadeNuke.GrenadeNukeLS
 	
 	
 end
-coroutine.wrap(WHFSQ_fake_script)()
-local function XRULYC_fake_script() -- Swagmode.SwagmodeLS 
+coroutine.wrap(RFQISM_fake_script)()
+local function SMSETK_fake_script() -- Swagmode.SwagmodeLS 
 	local script = Instance.new('LocalScript', Swagmode)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -356,8 +356,8 @@ local function XRULYC_fake_script() -- Swagmode.SwagmodeLS
 	
 	
 end
-coroutine.wrap(XRULYC_fake_script)()
-local function JXCAPY_fake_script() -- Main.GameDetermination 
+coroutine.wrap(SMSETK_fake_script)()
+local function MFEV_fake_script() -- Main.GameDetermination 
 	local script = Instance.new('LocalScript', Main)
 
 	local Info = TweenInfo.new(1)
@@ -433,8 +433,8 @@ local function JXCAPY_fake_script() -- Main.GameDetermination
 	
 	
 end
-coroutine.wrap(JXCAPY_fake_script)()
-local function RBYEM_fake_script() -- Main.BootScreen 
+coroutine.wrap(MFEV_fake_script)()
+local function XNUIU_fake_script() -- Main.BootScreen 
 	local script = Instance.new('LocalScript', Main)
 
 	local Info = TweenInfo.new(1)
@@ -459,8 +459,8 @@ local function RBYEM_fake_script() -- Main.BootScreen
 	wait(.35)
 	Tween4:Play()
 end
-coroutine.wrap(RBYEM_fake_script)()
-local function CFWKSI_fake_script() -- Main.BootChimePlay 
+coroutine.wrap(XNUIU_fake_script)()
+local function KQVI_fake_script() -- Main.BootChimePlay 
 	local script = Instance.new('LocalScript', Main)
 
 	local Boot = script.parent.BootChime
@@ -470,8 +470,8 @@ local function CFWKSI_fake_script() -- Main.BootChimePlay
 	
 	
 end
-coroutine.wrap(CFWKSI_fake_script)()
-local function KWSYEXZ_fake_script() -- Main.DHVisibility 
+coroutine.wrap(KQVI_fake_script)()
+local function TROQSVF_fake_script() -- Main.DHVisibility 
 	local script = Instance.new('LocalScript', Main)
 
 	local DahoodUI = script.parent.Background.DahoodUI
@@ -481,8 +481,8 @@ local function KWSYEXZ_fake_script() -- Main.DHVisibility
 		DahoodUI.Visible = false
 	end
 end
-coroutine.wrap(KWSYEXZ_fake_script)()
-local function NGCOITG_fake_script() -- Main.Notification 
+coroutine.wrap(TROQSVF_fake_script)()
+local function XBIV_fake_script() -- Main.Notification 
 	local script = Instance.new('LocalScript', Main)
 
 	wait(5)
@@ -520,8 +520,8 @@ local function NGCOITG_fake_script() -- Main.Notification
 	
 	
 end
-coroutine.wrap(NGCOITG_fake_script)()
-local function GDBT_fake_script() -- Main.Keybind 
+coroutine.wrap(XBIV_fake_script)()
+local function LJUILT_fake_script() -- Main.Keybind 
 	local script = Instance.new('LocalScript', Main)
 
 	local open = true
@@ -529,12 +529,12 @@ local function GDBT_fake_script() -- Main.Keybind
 	local mouse = game.Players.LocalPlayer:GetMouse()
 	keystatus=mouse.KeyDown:connect(function(key)
 		if key == "z" then
-			if script.Parent.Visible == true then
-				script.Parent.Visible = false
+			if script.Parent.Parent.Main.Visible == true then
+				script.Parent.Parent.Main.Visible = false
 			else
-				script.Parent.Visible = true
+				script.Parent.Parent.Main.Visible = true
 			end
 		end
 	end)
 end
-coroutine.wrap(GDBT_fake_script)()
+coroutine.wrap(LJUILT_fake_script)()

@@ -327,7 +327,7 @@ UICorner_16.Parent = Mute
 
 -- Scripts:
 
-local function XHTANU_fake_script() -- InfiniteYield1.InfYieldLS1 
+local function SZRRG_fake_script() -- InfiniteYield1.InfYieldLS1 
 	local script = Instance.new('LocalScript', InfiniteYield1)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -336,8 +336,8 @@ local function XHTANU_fake_script() -- InfiniteYield1.InfYieldLS1
 	
 	
 end
-coroutine.wrap(XHTANU_fake_script)()
-local function QVNF_fake_script() -- GrenadeNuke.GrenadeNukeLS 
+coroutine.wrap(SZRRG_fake_script)()
+local function WHFSQ_fake_script() -- GrenadeNuke.GrenadeNukeLS 
 	local script = Instance.new('LocalScript', GrenadeNuke)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -346,8 +346,8 @@ local function QVNF_fake_script() -- GrenadeNuke.GrenadeNukeLS
 	
 	
 end
-coroutine.wrap(QVNF_fake_script)()
-local function LLACC_fake_script() -- Swagmode.SwagmodeLS 
+coroutine.wrap(WHFSQ_fake_script)()
+local function XRULYC_fake_script() -- Swagmode.SwagmodeLS 
 	local script = Instance.new('LocalScript', Swagmode)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -356,8 +356,8 @@ local function LLACC_fake_script() -- Swagmode.SwagmodeLS
 	
 	
 end
-coroutine.wrap(LLACC_fake_script)()
-local function UPZACHM_fake_script() -- Main.GameDetermination 
+coroutine.wrap(XRULYC_fake_script)()
+local function JXCAPY_fake_script() -- Main.GameDetermination 
 	local script = Instance.new('LocalScript', Main)
 
 	local Info = TweenInfo.new(1)
@@ -380,7 +380,7 @@ local function UPZACHM_fake_script() -- Main.GameDetermination
 	local ErrorMessage = script.parent.Background.Error1.ErrorMessage
 	-------------------------------------------------------------------
 	--Dahood
-	wait(5.40)	
+	wait(5)
 	if game.PlaceId ==2788229376 then
 	DahoodUI:TweenSize(UDim2.new(0,200,0,368))
 	DahoodUI:TweenPosition(UDim2.new(0.5,0,0.53,0))	
@@ -433,14 +433,14 @@ local function UPZACHM_fake_script() -- Main.GameDetermination
 	
 	
 end
-coroutine.wrap(UPZACHM_fake_script)()
-local function RZEPQGB_fake_script() -- Main.BootScreen 
+coroutine.wrap(JXCAPY_fake_script)()
+local function RBYEM_fake_script() -- Main.BootScreen 
 	local script = Instance.new('LocalScript', Main)
 
 	local Info = TweenInfo.new(1)
-	local Highbar = script.parent.NetworkBars.HighBar
-	local NormalBar = script.Parent.NetworkBars.NormalBar
-	local LowBar = script.Parent.NetworkBars.LowBar
+	local Highbar = script.parent.HighBar
+	local NormalBar = script.Parent.NormalBar
+	local LowBar = script.Parent.LowBar
 	local Background = script.parent.Background
 	--------------------------------------------------------------------------------------------------
 	local Tween1 = game:GetService("TweenService"):Create(Background,Info,{ImageTransparency=0})
@@ -459,8 +459,8 @@ local function RZEPQGB_fake_script() -- Main.BootScreen
 	wait(.35)
 	Tween4:Play()
 end
-coroutine.wrap(RZEPQGB_fake_script)()
-local function UMBHE_fake_script() -- Main.BootChimePlay 
+coroutine.wrap(RBYEM_fake_script)()
+local function CFWKSI_fake_script() -- Main.BootChimePlay 
 	local script = Instance.new('LocalScript', Main)
 
 	local Boot = script.parent.BootChime
@@ -470,18 +470,19 @@ local function UMBHE_fake_script() -- Main.BootChimePlay
 	
 	
 end
-coroutine.wrap(UMBHE_fake_script)()
-local function UCZDSRZ_fake_script() -- Main.DHVisibility 
+coroutine.wrap(CFWKSI_fake_script)()
+local function KWSYEXZ_fake_script() -- Main.DHVisibility 
 	local script = Instance.new('LocalScript', Main)
 
+	local DahoodUI = script.parent.Background.DahoodUI
 	if game.PlaceId ==2788229376 then
-		script.parent.Background.DahoodUI.Visible = true
+		DahoodUI.Visible = true
 	else
-		script.parent.Background.Dahoodui.Visible = false 
+		DahoodUI.Visible = false
 	end
 end
-coroutine.wrap(UCZDSRZ_fake_script)()
-local function VEEGHRG_fake_script() -- Main.Notification 
+coroutine.wrap(KWSYEXZ_fake_script)()
+local function NGCOITG_fake_script() -- Main.Notification 
 	local script = Instance.new('LocalScript', Main)
 
 	wait(5)
@@ -519,8 +520,8 @@ local function VEEGHRG_fake_script() -- Main.Notification
 	
 	
 end
-coroutine.wrap(VEEGHRG_fake_script)()
-local function NEBZ_fake_script() -- Main.Keybind 
+coroutine.wrap(NGCOITG_fake_script)()
+local function GDBT_fake_script() -- Main.Keybind 
 	local script = Instance.new('LocalScript', Main)
 
 	local open = true
@@ -536,4 +537,4 @@ local function NEBZ_fake_script() -- Main.Keybind
 		end
 	end)
 end
-coroutine.wrap(NEBZ_fake_script)()
+coroutine.wrap(GDBT_fake_script)()

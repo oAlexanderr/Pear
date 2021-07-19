@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -23,26 +18,25 @@ local Swagmode = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
 local Error1 = Instance.new("Frame")
 local UICorner_8 = Instance.new("UICorner")
-local ErrorImage1 = Instance.new("ImageLabel")
-local UICorner_9 = Instance.new("UICorner")
+local ErrorImage = Instance.new("ImageLabel")
 local DecorationFrame2 = Instance.new("Frame")
-local UICorner_10 = Instance.new("UICorner")
+local UICorner_9 = Instance.new("UICorner")
 local ErrorLabel = Instance.new("TextLabel")
 local ErrorMessage = Instance.new("TextLabel")
 local LowBar = Instance.new("Frame")
-local UICorner_11 = Instance.new("UICorner")
+local UICorner_10 = Instance.new("UICorner")
 local NormalBar = Instance.new("Frame")
-local UICorner_12 = Instance.new("UICorner")
+local UICorner_11 = Instance.new("UICorner")
 local HighBar = Instance.new("Frame")
-local UICorner_13 = Instance.new("UICorner")
+local UICorner_12 = Instance.new("UICorner")
 local Power = Instance.new("Frame")
-local UICorner_14 = Instance.new("UICorner")
+local UICorner_13 = Instance.new("UICorner")
 local VolumeDown = Instance.new("Frame")
-local UICorner_15 = Instance.new("UICorner")
+local UICorner_14 = Instance.new("UICorner")
 local VolumeUp = Instance.new("Frame")
-local UICorner_16 = Instance.new("UICorner")
+local UICorner_15 = Instance.new("UICorner")
 local Mute = Instance.new("Frame")
-local UICorner_17 = Instance.new("UICorner")
+local UICorner_16 = Instance.new("UICorner")
 
 --Properties:
 
@@ -70,7 +64,6 @@ Background.Position = UDim2.new(0.49999997, 0, 0.498750001, 0)
 Background.Size = UDim2.new(0, 220, 0, 390)
 Background.Image = "rbxassetid://7103308572"
 Background.ImageTransparency = 1.000
-Background.ScaleType = Enum.ScaleType.Fit
 
 UICorner_2.CornerRadius = UDim.new(0, 25)
 UICorner_2.Parent = Background
@@ -203,19 +196,16 @@ Error1.Size = UDim2.new(0, 200, 0, 0)
 UICorner_8.CornerRadius = UDim.new(0, 25)
 UICorner_8.Parent = Error1
 
-ErrorImage1.Name = "ErrorImage1"
-ErrorImage1.Parent = Error1
-ErrorImage1.AnchorPoint = Vector2.new(0.5, 0.5)
-ErrorImage1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ErrorImage1.BackgroundTransparency = 1.000
-ErrorImage1.Position = UDim2.new(0.504999995, 0, 0.274456531, 0)
-ErrorImage1.Size = UDim2.new(0, 200, 0, 180)
-ErrorImage1.Image = "rbxassetid://7112207849"
-ErrorImage1.ImageTransparency = 1.000
-ErrorImage1.ScaleType = Enum.ScaleType.Fit
-
-UICorner_9.CornerRadius = UDim.new(0, 25)
-UICorner_9.Parent = ErrorImage1
+ErrorImage.Name = "ErrorImage "
+ErrorImage.Parent = Error1
+ErrorImage.AnchorPoint = Vector2.new(0.5, 0.5)
+ErrorImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ErrorImage.BackgroundTransparency = 1.000
+ErrorImage.Position = UDim2.new(0.504999995, 0, 0.274456531, 0)
+ErrorImage.Size = UDim2.new(0, 200, 0, 180)
+ErrorImage.Image = "rbxassetid://7112207849"
+ErrorImage.ImageTransparency = 1.000
+ErrorImage.ScaleType = Enum.ScaleType.Fit
 
 DecorationFrame2.Name = "DecorationFrame2"
 DecorationFrame2.Parent = Error1
@@ -224,8 +214,8 @@ DecorationFrame2.BackgroundTransparency = 1.000
 DecorationFrame2.Position = UDim2.new(0.0499999933, 0, 0.535326123, 0)
 DecorationFrame2.Size = UDim2.new(0, 180, 0, 5)
 
-UICorner_10.CornerRadius = UDim.new(0, 25)
-UICorner_10.Parent = DecorationFrame2
+UICorner_9.CornerRadius = UDim.new(0, 25)
+UICorner_9.Parent = DecorationFrame2
 
 ErrorLabel.Name = "ErrorLabel"
 ErrorLabel.Parent = Error1
@@ -264,8 +254,8 @@ LowBar.BorderColor3 = Color3.fromRGB(27, 42, 53)
 LowBar.Position = UDim2.new(0.882000029, 0, 0.0540000014, 0)
 LowBar.Size = UDim2.new(0, 3, 0, 6)
 
-UICorner_11.CornerRadius = UDim.new(0, 25)
-UICorner_11.Parent = LowBar
+UICorner_10.CornerRadius = UDim.new(0, 25)
+UICorner_10.Parent = LowBar
 
 NormalBar.Name = "NormalBar"
 NormalBar.Parent = Main
@@ -276,8 +266,8 @@ NormalBar.BorderColor3 = Color3.fromRGB(27, 42, 53)
 NormalBar.Position = UDim2.new(0.901967704, 0, 0.0493501648, 0)
 NormalBar.Size = UDim2.new(0, 3, 0, 10)
 
-UICorner_12.CornerRadius = UDim.new(0, 25)
-UICorner_12.Parent = NormalBar
+UICorner_11.CornerRadius = UDim.new(0, 25)
+UICorner_11.Parent = NormalBar
 
 HighBar.Name = "HighBar"
 HighBar.Parent = Main
@@ -288,8 +278,8 @@ HighBar.BorderColor3 = Color3.fromRGB(27, 42, 53)
 HighBar.Position = UDim2.new(0.915934443, 0, 0.0462149829, 0)
 HighBar.Size = UDim2.new(0, 3, 0, 13)
 
-UICorner_13.CornerRadius = UDim.new(0, 25)
-UICorner_13.Parent = HighBar
+UICorner_12.CornerRadius = UDim.new(0, 25)
+UICorner_12.Parent = HighBar
 
 Power.Name = "Power"
 Power.Parent = Main
@@ -299,8 +289,8 @@ Power.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Power.Position = UDim2.new(0.999000013, 0, 0.164000005, 0)
 Power.Size = UDim2.new(0, 5, 0, 40)
 
-UICorner_14.CornerRadius = UDim.new(0, 25)
-UICorner_14.Parent = Power
+UICorner_13.CornerRadius = UDim.new(0, 25)
+UICorner_13.Parent = Power
 
 VolumeDown.Name = "VolumeDown"
 VolumeDown.Parent = Main
@@ -310,8 +300,8 @@ VolumeDown.BorderColor3 = Color3.fromRGB(27, 42, 53)
 VolumeDown.Position = UDim2.new(0.00300000003, 0, 0.256999999, 0)
 VolumeDown.Size = UDim2.new(0, 5, 0, 30)
 
-UICorner_15.CornerRadius = UDim.new(0, 25)
-UICorner_15.Parent = VolumeDown
+UICorner_14.CornerRadius = UDim.new(0, 25)
+UICorner_14.Parent = VolumeDown
 
 VolumeUp.Name = "VolumeUp"
 VolumeUp.Parent = Main
@@ -321,8 +311,8 @@ VolumeUp.BorderColor3 = Color3.fromRGB(27, 42, 53)
 VolumeUp.Position = UDim2.new(0.00300000003, 0, 0.179000005, 0)
 VolumeUp.Size = UDim2.new(0, 5, 0, 30)
 
-UICorner_16.CornerRadius = UDim.new(0, 25)
-UICorner_16.Parent = VolumeUp
+UICorner_15.CornerRadius = UDim.new(0, 25)
+UICorner_15.Parent = VolumeUp
 
 Mute.Name = "Mute"
 Mute.Parent = Main
@@ -332,12 +322,12 @@ Mute.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Mute.Position = UDim2.new(0.00300000003, 0, 0.115000002, 0)
 Mute.Size = UDim2.new(0, 5, 0, 15)
 
-UICorner_17.CornerRadius = UDim.new(0, 25)
-UICorner_17.Parent = Mute
+UICorner_16.CornerRadius = UDim.new(0, 25)
+UICorner_16.Parent = Mute
 
 -- Scripts:
 
-local function UUQGD_fake_script() -- InfiniteYield1.InfYieldLS1 
+local function CTKH_fake_script() -- InfiniteYield1.InfYieldLS1 
 	local script = Instance.new('LocalScript', InfiniteYield1)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -346,8 +336,8 @@ local function UUQGD_fake_script() -- InfiniteYield1.InfYieldLS1
 	
 	
 end
-coroutine.wrap(UUQGD_fake_script)()
-local function BPHQBUX_fake_script() -- GrenadeNuke.GrenadeNukeLS 
+coroutine.wrap(CTKH_fake_script)()
+local function SZEY_fake_script() -- GrenadeNuke.GrenadeNukeLS 
 	local script = Instance.new('LocalScript', GrenadeNuke)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -356,8 +346,8 @@ local function BPHQBUX_fake_script() -- GrenadeNuke.GrenadeNukeLS
 	
 	
 end
-coroutine.wrap(BPHQBUX_fake_script)()
-local function EYHPH_fake_script() -- Swagmode.SwagmodeLS 
+coroutine.wrap(SZEY_fake_script)()
+local function CFZDEI_fake_script() -- Swagmode.SwagmodeLS 
 	local script = Instance.new('LocalScript', Swagmode)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -366,8 +356,8 @@ local function EYHPH_fake_script() -- Swagmode.SwagmodeLS
 	
 	
 end
-coroutine.wrap(EYHPH_fake_script)()
-local function JJHLJVF_fake_script() -- Main.GameDetermination 
+coroutine.wrap(CFZDEI_fake_script)()
+local function FTMKCYW_fake_script() -- Main.GameDetermination 
 	local script = Instance.new('LocalScript', Main)
 
 	local Info = TweenInfo.new(1)
@@ -385,7 +375,7 @@ local function JJHLJVF_fake_script() -- Main.GameDetermination
 	--ErrorScreen
 	local Error1 = script.parent.Background.Error1
 	local DecorationFrame2 = script.parent.Background.Error1.DecorationFrame2
-	local ErrorImage = script.parent.Background.Error1.ErrorImage1
+	local ErrorImage = script.parent.Background.Error1.ErrorImage
 	local ErrorLabel = script.parent.Background.Error1.ErrorLabel
 	local ErrorMessage = script.parent.Background.Error1.ErrorMessage
 	-------------------------------------------------------------------
@@ -419,7 +409,7 @@ local function JJHLJVF_fake_script() -- Main.GameDetermination
 	Tween12:Play()
 	Tween13:Play()
 	Tween14:Play()
-	Tween15:Play()
+	Tween14:Play()
 	-------------------------------------------------------------------------
 	
 	else
@@ -437,19 +427,20 @@ local function JJHLJVF_fake_script() -- Main.GameDetermination
 	wait(.3)
 	Tween19:Play()
 	Tween20:Play()
+		
+	
 	end
 	
 	
-	
 end
-coroutine.wrap(JJHLJVF_fake_script)()
-local function EPQKXJC_fake_script() -- Main.BootScreen 
+coroutine.wrap(FTMKCYW_fake_script)()
+local function FSTU_fake_script() -- Main.BootScreen 
 	local script = Instance.new('LocalScript', Main)
 
 	local Info = TweenInfo.new(1)
-	local Highbar = script.parent.HighBar
-	local NormalBar = script.Parent.NormalBar
-	local LowBar = script.Parent.LowBar
+	local Highbar = script.parent.NetworkBars.HighBar
+	local NormalBar = script.Parent.NetworkBars.NormalBar
+	local LowBar = script.Parent.NetworkBars.LowBar
 	local Background = script.parent.Background
 	--------------------------------------------------------------------------------------------------
 	local Tween1 = game:GetService("TweenService"):Create(Background,Info,{ImageTransparency=0})
@@ -468,8 +459,8 @@ local function EPQKXJC_fake_script() -- Main.BootScreen
 	wait(.35)
 	Tween4:Play()
 end
-coroutine.wrap(EPQKXJC_fake_script)()
-local function JSSO_fake_script() -- Main.BootChimePlay 
+coroutine.wrap(FSTU_fake_script)()
+local function RUOR_fake_script() -- Main.BootChimePlay 
 	local script = Instance.new('LocalScript', Main)
 
 	local Boot = script.parent.BootChime
@@ -479,57 +470,18 @@ local function JSSO_fake_script() -- Main.BootChimePlay
 	
 	
 end
-coroutine.wrap(JSSO_fake_script)()
-local function IJNQ_fake_script() -- Main.DHVisibility 
+coroutine.wrap(RUOR_fake_script)()
+local function DODX_fake_script() -- Main.DHVisibility 
 	local script = Instance.new('LocalScript', Main)
 
-	local DahoodUI = script.parent.Background.DahoodUI
 	if game.PlaceId ==2788229376 then
 		script.parent.Background.DahoodUI.Visible = true
 	else
 		script.parent.Background.Dahoodui.Visible = false 
 	end
 end
-coroutine.wrap(IJNQ_fake_script)()
-local function XBRRLOX_fake_script() -- Main.Notification 
-	local script = Instance.new('LocalScript', Main)
-
-	wait(5)
-	local function callback(Text)
-		if Text == "Button1 text" then
-			print ("Answer")
-		elseif Text == ("Button2 text") then
-			print ("Answer2")
-		end
-	end
-	
-	local NotificationBindable = Instance.new("BindableFunction")
-	NotificationBindable.OnInvoke = callback
-	--
-	game.StarterGui:SetCore("SendNotification",  {
-		Title = "Successfully loaded!";
-		Text = "Thank you for using Lumen!";
-		Icon = "";
-		Duration = 5;
-	
-		Callback = NotificationBindable;
-	})
-	
-	
-	local NotificationBindable = Instance.new("BindableFunction")
-	NotificationBindable.OnInvoke = callback
-	--
-	game.StarterGui:SetCore("SendNotification",  {
-		Title = "!";
-		Text = "Z to close.";
-		Icon = "";
-		Duration = 5;
-		Callback = NotificationBindable;
-	})
-	
-end
-coroutine.wrap(XBRRLOX_fake_script)()
-local function UKAHZC_fake_script() -- Main.KeybindToggle 
+coroutine.wrap(DODX_fake_script)()
+local function TGNS_fake_script() -- Main.Keybind 
 	local script = Instance.new('LocalScript', Main)
 
 	local open = true
@@ -539,10 +491,10 @@ local function UKAHZC_fake_script() -- Main.KeybindToggle
 		if key == "z" then
 			if script.Parent.Visible == true then
 				script.Parent.Visible = false
-					else
+			else
 				script.Parent.Visible = true
-	end
-	end
+			end
+		end
 	end)
 end
-coroutine.wrap(UKAHZC_fake_script)()
+coroutine.wrap(TGNS_fake_script)()

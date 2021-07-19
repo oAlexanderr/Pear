@@ -18,7 +18,7 @@ local Swagmode = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
 local Error1 = Instance.new("Frame")
 local UICorner_8 = Instance.new("UICorner")
-local ErrorImage = Instance.new("ImageLabel")
+local ImageError = Instance.new("ImageLabel")
 local DecorationFrame2 = Instance.new("Frame")
 local UICorner_9 = Instance.new("UICorner")
 local ErrorLabel = Instance.new("TextLabel")
@@ -196,16 +196,16 @@ Error1.Size = UDim2.new(0, 200, 0, 0)
 UICorner_8.CornerRadius = UDim.new(0, 25)
 UICorner_8.Parent = Error1
 
-ErrorImage.Name = "ErrorImage "
-ErrorImage.Parent = Error1
-ErrorImage.AnchorPoint = Vector2.new(0.5, 0.5)
-ErrorImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ErrorImage.BackgroundTransparency = 1.000
-ErrorImage.Position = UDim2.new(0.504999995, 0, 0.274456531, 0)
-ErrorImage.Size = UDim2.new(0, 200, 0, 180)
-ErrorImage.Image = "rbxassetid://7112207849"
-ErrorImage.ImageTransparency = 1.000
-ErrorImage.ScaleType = Enum.ScaleType.Fit
+ImageError.Name = "ImageError"
+ImageError.Parent = Error1
+ImageError.AnchorPoint = Vector2.new(0.5, 0.5)
+ImageError.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageError.BackgroundTransparency = 1.000
+ImageError.Position = UDim2.new(0.504999995, 0, 0.274456531, 0)
+ImageError.Size = UDim2.new(0, 200, 0, 180)
+ImageError.Image = "rbxassetid://7112207849"
+ImageError.ImageTransparency = 1.000
+ImageError.ScaleType = Enum.ScaleType.Fit
 
 DecorationFrame2.Name = "DecorationFrame2"
 DecorationFrame2.Parent = Error1
@@ -327,7 +327,7 @@ UICorner_16.Parent = Mute
 
 -- Scripts:
 
-local function DQWKDQU_fake_script() -- InfiniteYield1.InfYieldLS1 
+local function XHTANU_fake_script() -- InfiniteYield1.InfYieldLS1 
 	local script = Instance.new('LocalScript', InfiniteYield1)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -336,8 +336,8 @@ local function DQWKDQU_fake_script() -- InfiniteYield1.InfYieldLS1
 	
 	
 end
-coroutine.wrap(DQWKDQU_fake_script)()
-local function UMESKTW_fake_script() -- GrenadeNuke.GrenadeNukeLS 
+coroutine.wrap(XHTANU_fake_script)()
+local function QVNF_fake_script() -- GrenadeNuke.GrenadeNukeLS 
 	local script = Instance.new('LocalScript', GrenadeNuke)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -346,8 +346,8 @@ local function UMESKTW_fake_script() -- GrenadeNuke.GrenadeNukeLS
 	
 	
 end
-coroutine.wrap(UMESKTW_fake_script)()
-local function AIOGHQ_fake_script() -- Swagmode.SwagmodeLS 
+coroutine.wrap(QVNF_fake_script)()
+local function LLACC_fake_script() -- Swagmode.SwagmodeLS 
 	local script = Instance.new('LocalScript', Swagmode)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -356,8 +356,8 @@ local function AIOGHQ_fake_script() -- Swagmode.SwagmodeLS
 	
 	
 end
-coroutine.wrap(AIOGHQ_fake_script)()
-local function NPKKA_fake_script() -- Main.GameDetermination 
+coroutine.wrap(LLACC_fake_script)()
+local function UPZACHM_fake_script() -- Main.GameDetermination 
 	local script = Instance.new('LocalScript', Main)
 
 	local Info = TweenInfo.new(1)
@@ -375,7 +375,7 @@ local function NPKKA_fake_script() -- Main.GameDetermination
 	--ErrorScreen
 	local Error1 = script.parent.Background.Error1
 	local DecorationFrame2 = script.parent.Background.Error1.DecorationFrame2
-	local ErrorImage = script.parent.Background.Error1.ErrorImage
+	local ErrorImage = script.parent.Background.Error1.ImageError
 	local ErrorLabel = script.parent.Background.Error1.ErrorLabel
 	local ErrorMessage = script.parent.Background.Error1.ErrorMessage
 	-------------------------------------------------------------------
@@ -433,8 +433,8 @@ local function NPKKA_fake_script() -- Main.GameDetermination
 	
 	
 end
-coroutine.wrap(NPKKA_fake_script)()
-local function NCGWC_fake_script() -- Main.BootScreen 
+coroutine.wrap(UPZACHM_fake_script)()
+local function RZEPQGB_fake_script() -- Main.BootScreen 
 	local script = Instance.new('LocalScript', Main)
 
 	local Info = TweenInfo.new(1)
@@ -459,19 +459,19 @@ local function NCGWC_fake_script() -- Main.BootScreen
 	wait(.35)
 	Tween4:Play()
 end
-coroutine.wrap(NCGWC_fake_script)()
-local function WIYKU_fake_script() -- Main.BootChimePlay 
+coroutine.wrap(RZEPQGB_fake_script)()
+local function UMBHE_fake_script() -- Main.BootChimePlay 
 	local script = Instance.new('LocalScript', Main)
 
 	local Boot = script.parent.BootChime
 	------------------------------------------------------
 	wait(3.2)
-		Boot:Play()
+	Boot:Play()
 	
 	
 end
-coroutine.wrap(WIYKU_fake_script)()
-local function YPMSTL_fake_script() -- Main.DHVisibility 
+coroutine.wrap(UMBHE_fake_script)()
+local function UCZDSRZ_fake_script() -- Main.DHVisibility 
 	local script = Instance.new('LocalScript', Main)
 
 	if game.PlaceId ==2788229376 then
@@ -480,25 +480,8 @@ local function YPMSTL_fake_script() -- Main.DHVisibility
 		script.parent.Background.Dahoodui.Visible = false 
 	end
 end
-coroutine.wrap(YPMSTL_fake_script)()
-local function QFBFIE_fake_script() -- Main.Keybind 
-	local script = Instance.new('LocalScript', Main)
-
-	local open = true
-	local keystatus
-	local mouse = game.Players.LocalPlayer:GetMouse()
-	keystatus=mouse.KeyDown:connect(function(key)
-		if key == "z" then
-			if script.Parent.Visible == true then
-				script.Parent.Visible = false
-			else
-				script.Parent.Visible = true
-			end
-		end
-	end)
-end
-coroutine.wrap(QFBFIE_fake_script)()
-local function LAOZ_fake_script() -- Main.Notification 
+coroutine.wrap(UCZDSRZ_fake_script)()
+local function VEEGHRG_fake_script() -- Main.Notification 
 	local script = Instance.new('LocalScript', Main)
 
 	wait(5)
@@ -534,5 +517,23 @@ local function LAOZ_fake_script() -- Main.Notification
 		Callback = NotificationBindable;
 	})
 	
+	
 end
-coroutine.wrap(LAOZ_fake_script)()
+coroutine.wrap(VEEGHRG_fake_script)()
+local function NEBZ_fake_script() -- Main.Keybind 
+	local script = Instance.new('LocalScript', Main)
+
+	local open = true
+	local keystatus
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	keystatus=mouse.KeyDown:connect(function(key)
+		if key == "z" then
+			if script.Parent.Visible == true then
+				script.Parent.Visible = false
+			else
+				script.Parent.Visible = true
+			end
+		end
+	end)
+end
+coroutine.wrap(NEBZ_fake_script)()

@@ -327,7 +327,7 @@ UICorner_16.Parent = Mute
 
 -- Scripts:
 
-local function CTKH_fake_script() -- InfiniteYield1.InfYieldLS1 
+local function DQWKDQU_fake_script() -- InfiniteYield1.InfYieldLS1 
 	local script = Instance.new('LocalScript', InfiniteYield1)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -336,8 +336,8 @@ local function CTKH_fake_script() -- InfiniteYield1.InfYieldLS1
 	
 	
 end
-coroutine.wrap(CTKH_fake_script)()
-local function SZEY_fake_script() -- GrenadeNuke.GrenadeNukeLS 
+coroutine.wrap(DQWKDQU_fake_script)()
+local function UMESKTW_fake_script() -- GrenadeNuke.GrenadeNukeLS 
 	local script = Instance.new('LocalScript', GrenadeNuke)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -346,8 +346,8 @@ local function SZEY_fake_script() -- GrenadeNuke.GrenadeNukeLS
 	
 	
 end
-coroutine.wrap(SZEY_fake_script)()
-local function CFZDEI_fake_script() -- Swagmode.SwagmodeLS 
+coroutine.wrap(UMESKTW_fake_script)()
+local function AIOGHQ_fake_script() -- Swagmode.SwagmodeLS 
 	local script = Instance.new('LocalScript', Swagmode)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -356,8 +356,8 @@ local function CFZDEI_fake_script() -- Swagmode.SwagmodeLS
 	
 	
 end
-coroutine.wrap(CFZDEI_fake_script)()
-local function FTMKCYW_fake_script() -- Main.GameDetermination 
+coroutine.wrap(AIOGHQ_fake_script)()
+local function NPKKA_fake_script() -- Main.GameDetermination 
 	local script = Instance.new('LocalScript', Main)
 
 	local Info = TweenInfo.new(1)
@@ -433,8 +433,8 @@ local function FTMKCYW_fake_script() -- Main.GameDetermination
 	
 	
 end
-coroutine.wrap(FTMKCYW_fake_script)()
-local function FSTU_fake_script() -- Main.BootScreen 
+coroutine.wrap(NPKKA_fake_script)()
+local function NCGWC_fake_script() -- Main.BootScreen 
 	local script = Instance.new('LocalScript', Main)
 
 	local Info = TweenInfo.new(1)
@@ -459,8 +459,8 @@ local function FSTU_fake_script() -- Main.BootScreen
 	wait(.35)
 	Tween4:Play()
 end
-coroutine.wrap(FSTU_fake_script)()
-local function RUOR_fake_script() -- Main.BootChimePlay 
+coroutine.wrap(NCGWC_fake_script)()
+local function WIYKU_fake_script() -- Main.BootChimePlay 
 	local script = Instance.new('LocalScript', Main)
 
 	local Boot = script.parent.BootChime
@@ -470,8 +470,8 @@ local function RUOR_fake_script() -- Main.BootChimePlay
 	
 	
 end
-coroutine.wrap(RUOR_fake_script)()
-local function DODX_fake_script() -- Main.DHVisibility 
+coroutine.wrap(WIYKU_fake_script)()
+local function YPMSTL_fake_script() -- Main.DHVisibility 
 	local script = Instance.new('LocalScript', Main)
 
 	if game.PlaceId ==2788229376 then
@@ -480,8 +480,8 @@ local function DODX_fake_script() -- Main.DHVisibility
 		script.parent.Background.Dahoodui.Visible = false 
 	end
 end
-coroutine.wrap(DODX_fake_script)()
-local function TGNS_fake_script() -- Main.Keybind 
+coroutine.wrap(YPMSTL_fake_script)()
+local function QFBFIE_fake_script() -- Main.Keybind 
 	local script = Instance.new('LocalScript', Main)
 
 	local open = true
@@ -497,4 +497,42 @@ local function TGNS_fake_script() -- Main.Keybind
 		end
 	end)
 end
-coroutine.wrap(TGNS_fake_script)()
+coroutine.wrap(QFBFIE_fake_script)()
+local function LAOZ_fake_script() -- Main.Notification 
+	local script = Instance.new('LocalScript', Main)
+
+	wait(5)
+	local function callback(Text)
+		if Text == "Button1 text" then
+			print ("Answer")
+		elseif Text == ("Button2 text") then
+			print ("Answer2")
+		end
+	end
+	
+	local NotificationBindable = Instance.new("BindableFunction")
+	NotificationBindable.OnInvoke = callback
+	--
+	game.StarterGui:SetCore("SendNotification",  {
+		Title = "Successfully booted!";
+		Text = "Thank you for using Pear!";
+		Icon = "";
+		Duration = 5;
+	
+		Callback = NotificationBindable;
+	})
+	
+	
+	local NotificationBindable = Instance.new("BindableFunction")
+	NotificationBindable.OnInvoke = callback
+	--
+	game.StarterGui:SetCore("SendNotification",  {
+		Title = "!";
+		Text = "Z to close.";
+		Icon = "";
+		Duration = 5;
+		Callback = NotificationBindable;
+	})
+	
+end
+coroutine.wrap(LAOZ_fake_script)()

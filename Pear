@@ -327,7 +327,7 @@ UICorner_16.Parent = Mute
 
 -- Scripts:
 
-local function DTOWQ_fake_script() -- InfiniteYield1.InfYieldLS1 
+local function DBVBPOE_fake_script() -- InfiniteYield1.InfYieldLS1 
 	local script = Instance.new('LocalScript', InfiniteYield1)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -336,8 +336,8 @@ local function DTOWQ_fake_script() -- InfiniteYield1.InfYieldLS1
 	
 	
 end
-coroutine.wrap(DTOWQ_fake_script)()
-local function RFQISM_fake_script() -- GrenadeNuke.GrenadeNukeLS 
+coroutine.wrap(DBVBPOE_fake_script)()
+local function BRIKIJG_fake_script() -- GrenadeNuke.GrenadeNukeLS 
 	local script = Instance.new('LocalScript', GrenadeNuke)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -346,8 +346,8 @@ local function RFQISM_fake_script() -- GrenadeNuke.GrenadeNukeLS
 	
 	
 end
-coroutine.wrap(RFQISM_fake_script)()
-local function SMSETK_fake_script() -- Swagmode.SwagmodeLS 
+coroutine.wrap(BRIKIJG_fake_script)()
+local function DKFDJ_fake_script() -- Swagmode.SwagmodeLS 
 	local script = Instance.new('LocalScript', Swagmode)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -356,8 +356,8 @@ local function SMSETK_fake_script() -- Swagmode.SwagmodeLS
 	
 	
 end
-coroutine.wrap(SMSETK_fake_script)()
-local function MFEV_fake_script() -- Main.GameDetermination 
+coroutine.wrap(DKFDJ_fake_script)()
+local function GLTS_fake_script() -- Main.GameDetermination 
 	local script = Instance.new('LocalScript', Main)
 
 	local Info = TweenInfo.new(1)
@@ -433,8 +433,8 @@ local function MFEV_fake_script() -- Main.GameDetermination
 	
 	
 end
-coroutine.wrap(MFEV_fake_script)()
-local function XNUIU_fake_script() -- Main.BootScreen 
+coroutine.wrap(GLTS_fake_script)()
+local function LZPR_fake_script() -- Main.BootScreen 
 	local script = Instance.new('LocalScript', Main)
 
 	local Info = TweenInfo.new(1)
@@ -459,8 +459,8 @@ local function XNUIU_fake_script() -- Main.BootScreen
 	wait(.35)
 	Tween4:Play()
 end
-coroutine.wrap(XNUIU_fake_script)()
-local function KQVI_fake_script() -- Main.BootChimePlay 
+coroutine.wrap(LZPR_fake_script)()
+local function GEUN_fake_script() -- Main.BootChimePlay 
 	local script = Instance.new('LocalScript', Main)
 
 	local Boot = script.parent.BootChime
@@ -470,8 +470,8 @@ local function KQVI_fake_script() -- Main.BootChimePlay
 	
 	
 end
-coroutine.wrap(KQVI_fake_script)()
-local function TROQSVF_fake_script() -- Main.DHVisibility 
+coroutine.wrap(GEUN_fake_script)()
+local function OGHCJXN_fake_script() -- Main.DHVisibility 
 	local script = Instance.new('LocalScript', Main)
 
 	local DahoodUI = script.parent.Background.DahoodUI
@@ -481,8 +481,8 @@ local function TROQSVF_fake_script() -- Main.DHVisibility
 		DahoodUI.Visible = false
 	end
 end
-coroutine.wrap(TROQSVF_fake_script)()
-local function XBIV_fake_script() -- Main.Notification 
+coroutine.wrap(OGHCJXN_fake_script)()
+local function FPYEZW_fake_script() -- Main.Notification 
 	local script = Instance.new('LocalScript', Main)
 
 	wait(5)
@@ -520,8 +520,8 @@ local function XBIV_fake_script() -- Main.Notification
 	
 	
 end
-coroutine.wrap(XBIV_fake_script)()
-local function LJUILT_fake_script() -- Main.Keybind 
+coroutine.wrap(FPYEZW_fake_script)()
+local function IYQNGVX_fake_script() -- Main.Keybind 
 	local script = Instance.new('LocalScript', Main)
 
 	local open = true
@@ -529,12 +529,12 @@ local function LJUILT_fake_script() -- Main.Keybind
 	local mouse = game.Players.LocalPlayer:GetMouse()
 	keystatus=mouse.KeyDown:connect(function(key)
 		if key == "z" then
-			if script.Parent.Parent.Main.Visible == true then
-				script.Parent.Parent.Main.Visible = false
+			if script.Parent.Visible == true then
+				script.Parent.Visible = false
 			else
-				script.Parent.Parent.Main.Visible = true
+				script.Parent.Visible = true
 			end
 		end
 	end)
 end
-coroutine.wrap(LJUILT_fake_script)()
+coroutine.wrap(IYQNGVX_fake_script)()
